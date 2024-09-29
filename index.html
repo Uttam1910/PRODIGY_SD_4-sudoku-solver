@@ -10,12 +10,24 @@
 <body>
   <div class="container">
     <h1>Sudoku Solver</h1>
-    <!-- Sudoku Grid -->
-    <table id="sudoku-grid"></table>
-    
-    <div class="buttons">
+    <div class="controls">
+      <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+      <button onclick="generatePuzzle()">Generate Puzzle</button>
       <button onclick="solveSudoku()">Solve</button>
       <button onclick="clearGrid()">Clear</button>
+      <button onclick="giveHint()">Hint</button>
+    </div>
+    
+    <!-- Sudoku Grid -->
+    <table id="sudoku-grid"></table>
+    <div class="timer">Time: <span id="time">00:00</span></div>
+    <div class="instructions">
+      <h3>Instructions</h3>
+      <p>Fill in the grid so that each row, column, and 3x3 box contains the digits 1 through 9.</p>
     </div>
   </div>
 
