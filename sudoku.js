@@ -183,8 +183,10 @@ function removeNumbers(board, difficulty) {
   while (cellsRemoved.size < cellsToRemove) {
     const row = Math.floor(Math.random() * 9);
     const col = Math.floor(Math.random() * 9);
-    cellsRemoved.add(`${row}-${col}`); // Store cell position to ensure uniqueness
-    board[row][col] = 0; // Remove number
+    if (!cellsRemoved.has(`${row}-${col}`)) {
+      cellsRemoved.add(`${row}-${col}`); // Store cell position to ensure uniqueness
+      board[row][col] = 0; // Remove number
+    }
   }
 }
 
@@ -196,7 +198,7 @@ function generatePuzzle() {
   setBoard(fullBoard);
 }
 
-// Hint functionality
+// Hint functionality: Automatically places the hint number in the cell
 function giveHint() {
   const board = getBoard();
   const hintPosition = findEmptyCell(board);
@@ -204,8 +206,10 @@ function giveHint() {
     const [row, col] = hintPosition;
     for (let num = 1; num <= 9; num++) {
       if (isValid(board, row, col, num)) {
-        alert(`Hint: You can place ${num} in cell (${row + 1}, ${col + 1})`);
-        return;
+        board[row][col] = num; // Place the number in the board
+        setBoard(board); // Update the UI with the new board
+        alert(`Hint: ${num} has been placed in cell (${row + 1}, ${col + 1}).`);
+        return; // Exit after placing the hint
       }
     }
     alert("No hints available for this cell.");
