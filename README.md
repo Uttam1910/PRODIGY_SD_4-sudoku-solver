@@ -87,8 +87,8 @@ The layout is designed to be responsive, so the Sudoku solver works on both desk
 ### **Contributing**
 Contributions, issues, and feature requests are welcome! Here's how you can contribute:
 
-### **Fork the repository.**
-Create your feature branch: git checkout -b feature/my-new-feature.
-Commit your changes: git commit -m 'Add some feature'.
-Push to the branch: git push origin feature/my-new-feature.
-Submit a pull request.
+1. Fork the repository.
+2. Create your feature branch: git checkout -b feature/my-new-feature.
+3. Commit your changes: git commit -m 'Add some feature'.
+4 Push to the branch: git push origin feature/my-new-feature.
+5. Submit a pull request.
