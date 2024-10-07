@@ -13,8 +13,6 @@ A **Sudoku Solver** web application that allows users to generate, solve, and in
 - [Getting Started](#getting-started)
 - [How It Works](#how-it-works)
 - [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
 
 ## Features
 
