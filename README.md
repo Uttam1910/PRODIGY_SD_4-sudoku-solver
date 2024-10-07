@@ -2,7 +2,6 @@
 
 ![Sudoku Solver](https://img.shields.io/badge/Status-Complete-brightgreen.svg)
 ![Technologies](https://img.shields.io/badge/Technologies-HTML%20%7C%20CSS%20%7C%20JavaScript-blue)
-![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 A **Sudoku Solver** web application that allows users to generate, solve, and interact with Sudoku puzzles directly in their browser. The application uses backtracking algorithm logic to solve any Sudoku puzzle and provides an intuitive user interface.
 
