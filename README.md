@@ -82,7 +82,7 @@ The layout is designed to be responsive, so the Sudoku solver works on both desk
 ![image](https://github.com/user-attachments/assets/1e70b23c-69f4-4cb6-b010-a07a784c6a66)
 
 ### **Contributing**
-Contributions, issues, and feature requests are welcome! Here's how you can contribute:
+Contributions, issues, and feature requests are welcome! Here's how you can contribute: 
 
 1. Fork the repository.
 2. Create your feature branch: git checkout -b feature/my-new-feature.
